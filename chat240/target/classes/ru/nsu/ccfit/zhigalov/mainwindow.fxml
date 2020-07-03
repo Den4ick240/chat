@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="400.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1E352F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.nsu.ccfit.zhigalov.chatclient.MainWindowController">
+   <children>
+      <ScrollPane fx:id="usersOnlinePane" layoutX="424.0" layoutY="122.0" prefHeight="162.0" prefWidth="162.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="122.0">
+         <content>
+            <TextFlow fx:id="usersOnlineTextFlow" prefHeight="161.0" prefWidth="162.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="-8.0" layoutY="-8.0" minWidth="200.0" prefHeight="415.0" prefWidth="432.0" style="-fx-background-color: #828C51;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="sendButton" layoutX="332.0" layoutY="344.0" mnemonicParsing="false" onAction="#sendButtonAction" prefHeight="40.0" prefWidth="60.0" style="-fx-background-color: #335145;" text="send" textFill="#a6c36f" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="4.0">
+               <font>
+                  <Font name="Showcard Gothic" size="15.0" />
+               </font>
+            </Button>
+            <ScrollPane prefHeight="343.0" prefWidth="400.0" style="-fx-background-color: #828C51; -fx-padding: 0; -fx-background-insets: 0;" AnchorPane.bottomAnchor="64.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <TextArea layoutX="14.0" layoutY="340.0" prefHeight="56.0" prefWidth="324.0" wrapText="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="68.0" />
+         </children></AnchorPane>
+      <Label alignment="CENTER" layoutX="400.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #335145;" text="Chat240" textFill="#828c51" textOverrun="CENTER_ELLIPSIS" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Showcard Gothic" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="exitButton" layoutX="430.0" layoutY="351.0" mnemonicParsing="false" onAction="#exitButtonAction" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #335145;" text="Exit" textFill="#a6c36f" AnchorPane.bottomAnchor="15.399999999999999" AnchorPane.rightAnchor="27.599999999999994">
+         <font>
+            <Font name="Showcard Gothic" size="17.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="407.0" layoutY="103.0" prefHeight="18.0" prefWidth="125.0" text="Users online:" textFill="#828c51" AnchorPane.rightAnchor="67.39999999999998" AnchorPane.topAnchor="103.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="usersNumLabel" layoutX="515.0" layoutY="104.0" prefHeight="16.0" prefWidth="50.0" text="0" textFill="#828c51" AnchorPane.rightAnchor="34.60000000000002" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="401.0" layoutY="71.0" prefHeight="18.0" prefWidth="200.0" textFill="#828c51" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
